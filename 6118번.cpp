@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int N, M, dist;
+int N, M;
 vector<vector<int>> graph;
 vector<int> ans;
 int visited[20202];
