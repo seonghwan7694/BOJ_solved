@@ -1,5 +1,7 @@
 # BOJ_solved
-백준 푼 것 올려두는 레포
+소스코드를 올리고, 푼 흔적을 남깁니다. <br>
 
-! 작업 환경 - vscode
-! 익스텐션 - vim
+| Date | Youtube |
+|         :----:         | :----: |
+|   Jun/17/2022    | [🌏🌏🌏](https://youtu.be/qN1Hzh1sV8s) |
+|        🚧🚧🚧        |   🚧🚧🚧   |
