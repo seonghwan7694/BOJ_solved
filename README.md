@@ -1,5 +1,5 @@
 # BOJ_solved
-소스코드를 올리고, Boj Codeforces Atcorder 푼 흔적을 남깁니다. <br>
+소스코드를 올리고, Boj + Codeforces + Atcorder 푼 흔적을 남깁니다. <br>
 밤을 자주 새서 '스트리밍 날짜'와 '표에 적혀 있는 날짜'가 맞지 않을 수 있습니다. <br>
 
 | Solved | 의미 |
