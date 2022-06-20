@@ -8,6 +8,7 @@
 | 메모리 초과 | 🤢 |
 | 시간 초과 | 🤢 |
 | 시도했는데 풀지 못함 | 🤬 |
+| 베껴서 맞았습니다! | 👻 |
 | 손도 못댐 | ❌ |
 
 | Date | Youtube | Solved(Boj, Codeforces, Atcorder) |
@@ -15,4 +16,10 @@
 |   Jun/17/2022    | [🌏🌏🌏](https://youtu.be/qN1Hzh1sV8s) | 😍😍😍😍, 😍😍😍 |
 |        Jun/18/2022        |   [🌏🌏🌏](https://www.youtube.com/watch?v=zVu44IkTzZM)   | 😍😍 |
 |        Jun/19/2022      |   [🌏🌏🌏](https://youtu.be/WFFt7auzro4)   | 😍😍😍😍, 😍🤬 |
+|        Jun/20/2022        |   [🌏🌏🌏](https://youtu.be/S5D0B6VIDuw)   | 😍👻, 😍😍❌😍 |
+|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
+|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
+|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
+|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
+|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
