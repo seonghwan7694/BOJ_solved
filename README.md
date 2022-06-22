@@ -19,7 +19,7 @@
 |        Jun/19/2022      |   [🌏🌏🌏](https://youtu.be/WFFt7auzro4)   | 😍😍😍😍, 😍🤬 |
 |        Jun/20/2022        |   [🌏🌏🌏](https://youtu.be/S5D0B6VIDuw)   | 😍👻, 😍😍❌😍 |
 |        Jun/21/2022        |   [🌏🌏🌏](https://youtu.be/UI2lZFNpDfI)   | 🤪🤪🤪🤪👻😍🤪🤪😍❌ |
-|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
+|        Jun/21/2022        |   [🌏🌏🌏](https://youtu.be/YiJ-tgIlObE)   | 🤪🤪🤬👻 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
