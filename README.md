@@ -21,7 +21,7 @@
 |        Jun/21/2022        |   [🌏🌏🌏](https://youtu.be/UI2lZFNpDfI)   | 🤪🤪🤪🤪👻😍🤪🤪😍❌ |
 |        Jun/22/2022        |   [🌏🌏🌏](https://youtu.be/YiJ-tgIlObE)   | 🤪🤪🤬👻 |
 |        Jun/27/2022        |   [🌏🌏🌏](https://youtu.be/t2dicvOu9Fo)   | 👻👻👻👻 |
-|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
+|        Jun/28/2022        |   [🌏🌏🌏](https://youtu.be/OfZxnMw2muE)   | 🤪👻😍😍👻❌ |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
