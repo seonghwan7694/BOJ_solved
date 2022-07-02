@@ -24,7 +24,7 @@
 |        Jun/28/2022        |   [🌏🌏🌏](https://youtu.be/OfZxnMw2muE)   | 🤪👻😍😍👻❌ |
 |        Jun/30/2022        |   [🌏🌏🌏](https://youtu.be/2NxtSwQ4xOs)   | 🤪😍👻 |
 |        Jul/01/2022        |   [🌏🌏🌏](https://youtu.be/p_iQq2c4EOg)   | 👻👻, 😍😍, , 😍😍🤬 |
-|        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
+|        Jul/02/2022        |   [🌏🌏🌏](https://youtu.be/K6hLe5sv9tc)   | 👻🤪🤪👻, 😍😍😍😍 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
 |        🚧🚧🚧        |   🚧🚧🚧   | 🚧🚧🚧 |
