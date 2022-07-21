@@ -37,3 +37,4 @@
 |        Jul/18/2022        |   [🌏🌏🌏](https://youtu.be/Y9LekUyNMO0)   | 😍👻, 😍😍😍😍, , 😍😍🤬|
 |        Jul/19/2022        |   [🌏🌏🌏](https://youtu.be/jdJBqhTovgk)   | 👻👻😍😍, , , |
 |        Jul/20/2022        |   [🌏🌏🌏](https://youtu.be/hphilGr1bmU)   | 😍👻👻👻😍, , , |
+|        Jul/21/2022        |   [🌏🌏🌏](https://youtu.be/BSggVePdAKg)   | 👻❌👻❌, , , |
