@@ -45,3 +45,4 @@
 |        Jul/30/2022        |   [🌏🌏🌏](https://youtu.be/dftjxcDMaNg)   | 😍😍😍, , , , |
 |        Jul/31/2022        |   [🌏🌏🌏](https://youtu.be/DBV-eMNaYSI)   | 👻😍😍👻, , , , |
 |        Auh/01/2022        |   [🌏🌏🌏](https://youtu.be/W8qCBKC2qik)   | 😍👻, , , , |
+|        Auh/02/2022        |   [🌏🌏🌏](https://youtu.be/M_gftwSUq94)   | 🤬😍😍🤬, , , , |
