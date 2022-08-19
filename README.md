@@ -1,16 +1,13 @@
 # BOJ_solved
-소스코드를 올리고, Boj + Codeforces + Atcorder + SWExpertAcademy 푼 흔적을 남깁니다. <br>
-밤을 자주 새서 '스트리밍 날짜'와 '표에 적혀 있는 날짜'가 맞지 않을 수 있습니다. <br>
+upload the source code and write a review of that <br>
 
-| Solved | 의미 |
+| status | stands for |
 | :---:  | :--: |
-| 맞았습니다! | 😍 |
-| 메모리 초과 | 🤢 |
-| 시간 초과 | 🤢 |
-| 시도했는데 풀지 못함 | 🤬 |
-| 베껴서 맞았습니다! | 👻 |
-| 다시 풀었습니다! | 🤪 |
-| 손도 못댐 | ❌ |
+| 😍 | AC |
+| 🤢 | MLE |
+| 🤢 | TLE |
+| 🤬 | Try to solve but I can't |
+| ❌ | Not try |
 
 | Date | Youtube | Solved(BOJ, CODEFORCES, ATCORDER, SWEA, LEETCODE) |
 |         :----:         | :----: | :-----: |
