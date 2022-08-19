@@ -1,5 +1,5 @@
 # BOJ_solved
-upload the source code and write a review of that <br>
+upload the source code about varies platform <br>
 
 | status | stands for |
 | :---:  | :--: |
