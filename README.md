@@ -41,6 +41,6 @@ upload the source code about varies platform. <br>
 |        Jul/29/2022        |   [🌏🌏🌏](https://youtu.be/rvEKsAkk5Cg)   | 😍, , , , |
 |        Jul/30/2022        |   [🌏🌏🌏](https://youtu.be/dftjxcDMaNg)   | 😍😍😍, , , , |
 |        Jul/31/2022        |   [🌏🌏🌏](https://youtu.be/DBV-eMNaYSI)   | 👻😍😍👻, , , , |
-|        Auh/01/2022        |   [🌏🌏🌏](https://youtu.be/W8qCBKC2qik)   | 😍👻, , , , |
-|        Auh/02/2022        |   [🌏🌏🌏](https://youtu.be/M_gftwSUq94)   | 🤬😍😍🤬, , , , |
-|        Auh/03/2022        |   [🌏🌏🌏](https://youtu.be/k98Rap7rcsA)   | 👻🤬😍, , , , |
+|        Aug/01/2022        |   [🌏🌏🌏](https://youtu.be/W8qCBKC2qik)   | 😍👻, , , , |
+|        Aug/02/2022        |   [🌏🌏🌏](https://youtu.be/M_gftwSUq94)   | 🤬😍😍🤬, , , , |
+|        Aug/03/2022        |   [🌏🌏🌏](https://youtu.be/k98Rap7rcsA)   | 👻🤬😍, , , , |
