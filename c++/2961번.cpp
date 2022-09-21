@@ -2,6 +2,7 @@
 using namespace std;
 #define ll long long
 ll N;
+ll p;
 pair<ll, ll> food[10];
 ll ans = 2929929292929;
 
