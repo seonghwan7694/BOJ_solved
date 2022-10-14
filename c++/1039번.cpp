@@ -4,7 +4,7 @@ string n;
 int N, K, ans = -1, var, length, I, J, tmp_K;
 int pow102[10] = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 vector<bool> chk(1010101, false);
-void SWAP(int num, int i, int j){
+void SWAP(int& num, int i, int j){
   I = (num / pow102[length - i - 1])%10;
   J = (num / pow102[length - j - 1])%10;
   num -= pow102[length - i - 1] * I + pow102[length - j - 1] * J; 
