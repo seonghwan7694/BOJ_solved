@@ -1,7 +1,7 @@
 # BOJ_solved
 upload the source code about varies platform. <br>
 
-| status | stands for |
+| status | stands for | 
 | :---:  | :--: |
 | 😍 | AC |
 | 🤢 | MLE |
