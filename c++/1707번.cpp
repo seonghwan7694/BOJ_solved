@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+/*test*/
 void solution(){
   int V, E; cin >> V >> E;
   int color[20202] = {0};
