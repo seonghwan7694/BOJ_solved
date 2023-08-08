@@ -31,6 +31,7 @@ void func(int idx){
         func(idx + 1);
 
         v[i].first += v[idx].second;
+        
         v[idx].first += v[i].second;
 
     }
