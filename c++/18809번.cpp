@@ -13,10 +13,16 @@ vector<pair<int, int>> CAN_FLOOD;
 int dx[4] = {-1, 1, 0, 0};
 int dy[4] = {0, 0, -1, 1};
 
+typedef struct{
+    int x;
+    int y;
+    int c;
+}node;
+
 int SIMULATION(){
 
     int cpy_MAP[N][M], r = 0;
-    queue<tuple<int, int, int>> q;
+    queue<node> q;
     for(int i = 0; i < N; i++){
         for(int j = 0; j < M; j++){
             cpy_MAP[i][j] = MAP[i][j];
@@ -27,13 +33,18 @@ int SIMULATION(){
 
     bool green_MAP[N][M];
     bool red_MAP[N][M];
+    node obj;
+    int cur_x, cur_y, cur_color;
     while(!q.empty()){
         int Q_SIZE = q.size();
         memset(green_MAP, false, sizeof green_MAP);
         memset(red_MAP, false, sizeof red_MAP);
 
         for(int q_size = 0; q_size < Q_SIZE; q_size++){
-            auto [cur_x, cur_y, cur_color] = q.front();
+            obj = q.front();
+            cur_x = obj.x;
+            cur_y = obj.y;
+            cur_color = obj.c;
             q.pop();
 
             for(int dir = 0; dir < 4; dir++){
