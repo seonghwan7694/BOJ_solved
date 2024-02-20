@@ -1,21 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define lld long long int
-#define MAX_SIZE 1010101
-lld N, M, K; // M : change number, K : get SUM
-lld arr[MAX_SIZE], segmentTree[MAX_SIZE * 4], lazy[MAX_SIZE * 4];
+#define ll long long
+#define SIZE 1000001
 
-lld makeSegmentTree(lld node, lld start, lld end){
-    if(start == end){
-        return segmentTree[node] = arr[start];
-    }
-    lld mid = (start + end)/2;
-    return segmentTree[node] = makeSegmentTree(node * 2, start, mid) + makeSegmentTree(node * 2 + 1, mid + 1, end);
+vector<ll> arr(SIZE), tree(SIZE * 4), lazy(SIZE * 4);
+ll N, M, K;
+
+ll init(int node, int start, int end){
+    if(start == end) return tree[node] = arr[start];
+    return tree[node] = init(node * 2, start, (start + end)/2) + init(node * 2 + 1, (start + end)/2 + 1, end);
 }
 
-void update_lazy(lld node, lld start, lld end){
+void update_lazy(ll node, ll start, ll end){
     if(lazy[node] != 0){
-        segmentTree[node] += (end - start + 1) * lazy[node];
+        tree[node] += (end - start + 1) * lazy[node];
         if(start != end){
             lazy[node * 2] += lazy[node];
             lazy[node * 2 + 1] += lazy[node];
@@ -24,52 +22,50 @@ void update_lazy(lld node, lld start, lld end){
     }
 }
 
-
-void update_range(lld node, lld start, lld end, lld l, lld r, lld val){
+void update_range(ll node, ll left, ll right, ll start, ll end, ll diff){
     update_lazy(node, start, end);
-    if(l > end or r < start) return;
-    if(l <= start and end <= r){
-        segmentTree[node] += (end - start + 1) * val;
+    if(start > right or end < left) return;
+    if(left <= start and end <= right){
+        tree[node] += (end - start + 1) * diff;
         if(start != end){
-            lazy[node * 2] += val;
-            lazy[node * 2 + 1] += val;
-        }   
+            lazy[node * 2] += diff;
+            lazy[node * 2 + 1] += diff;
+        }
         return;
     }
-    lld mid = (start + end) / 2;
-    update_range(node * 2, start, mid, l, r, val);
-    update_range(node * 2 + 1, mid + 1, end, l, r, val);
-    segmentTree[node] = segmentTree[node * 2] + segmentTree[node * 2 + 1];
+    update_range(node * 2, left, right, start, (start + end)/2, diff);
+    update_range(node * 2 + 1, left, right, (start + end)/2 + 1, end, diff);
+    tree[node] = tree[node * 2] + tree[node * 2 + 1];
 }
 
-
-lld query(lld node, lld start, lld end, lld l, lld r){ // sum of [l, r]
+ll sum(ll node, ll left, ll right, ll start, ll end){
     update_lazy(node, start, end);
-    if(l > end or r < start) return 0;
-
-    if(l <= start and end <= r) return segmentTree[node];
-
-    lld mid = (start + end) / 2;
-    return query(node * 2, start, mid, l, r) + query(node * 2 + 1, mid + 1, end, l , r);
+    if(start > right or end < left) return 0;
+    if(left <= start and end <= right) return tree[node];
+    return sum(node * 2, left, right, start, (start + end)/2) + sum(node *2 +1,left,right,(start+end)/2+1, end);
 }
+
 
 int main(){
     ios::sync_with_stdio(false);
     cin >> N >> M >> K;
-    for(lld i = 1, tmp; i <= N; i++){
-        cin >> tmp;
-        arr[i] = tmp;
-    }
-    makeSegmentTree(1, 1, N);
-    for(lld i = 0, a, b, c, d; i < M + K; i++){
+    for(int i = 1; i <= N; i++) cin >> arr[i];
+    init(1, 1, N);
+    for(int i = 0, a, b, c, d; i < M + K; i++){
         cin >> a;
         if(a == 1){
             cin >> b >> c >> d;
-            update_range(1, 1, N, b, c, d);
+            // [b, c] += d
+            update_range(1, b, c, 1, N, d);
         }else{
             cin >> b >> c;
-            cout << query(1, 1, N, b, c) << "\n";
+            cout << sum(1, b, c, 1, N) << "\n";
+            // print sum of [b, c]
         }
+
     }
+
+
+
     return 0;
 }
