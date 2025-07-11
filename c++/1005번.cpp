@@ -37,7 +37,7 @@ int dp[1010]; // dp[i] = val : i 지점을 방문하는데 걸리는 시간은 v
 vector<int> adj[1010];
 
 void topologySort(){
-  queue<pair<int, int>> q; // {현재 노드, 현재 시간} 
+  queue<pair<int, int>> q; // {현재 노드, 현재 시간}
   for(int i = 1; i <= N; i++){
     if(in_degree[i] == 0){
       dp[i] = D[i]; // i 지점을 방문하는데 걸리는 시간은 D[i] 입니다.
