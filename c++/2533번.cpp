@@ -1,64 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define MAX_SIZE 1010101
+// dp[v][0] = {v를 루트로 하는 서브트리에서 v가 얼리 어답터가 아닐 때, 필요한 얼리 아답터의 최소값}
+// dp[v][1] = {v를 루트로 하는 서브트리에서 v가 얼리 어답터일 때, 필요한 얼리 아답터의 최소값}
+int N, dp[MAX_SIZE][2];
+vector<int> g[MAX_SIZE];
+bool vis[MAX_SIZE];
 
-#define MAX 1000001
-int N, Memo[MAX][2];
-vector<bool> visited;
-vector<int> v[MAX];
-vector<int> tree[MAX];
-
-void input(){
-  cin >> N;
-  for(int i = 0; i < N - 1; i++){
-    int a, b; cin >> a >> b;
-    v[a].push_back(b);
-    v[b].push_back(a);
+void func(int r){
+  vis[r] = true;
+  dp[r][1] = 1;
+  
+  for(auto c : g[r]){
+    if(vis[c]) continue;
+    func(c);
+    dp[r][1] += min(dp[c][0], dp[c][1]);
+    dp[r][0] += dp[c][1];
   }
-  visited.resize(MAX, false);
-}
-
-void make_tree(int cur){
-  visited[cur] = true;
-  for(int nxt : v[cur]){
-    if(!visited[nxt]){
-      tree[cur].push_back(nxt);
-      make_tree(nxt);
-    }
-  }
-}
-
-int DFS(int cur, int state){
-  if(Memo[cur][state] != -1) return Memo[cur][state];
-  if(state == 1){
-    Memo[cur][state] = 1;
-    for(auto nxt : tree[cur]){
-      Memo[cur][state] += min(DFS(nxt, 0), DFS(nxt, 1));
-    }
-  }else{
-    Memo[cur][state] = 0;
-    for(auto nxt : tree[cur]){
-      Memo[cur][state] += DFS(nxt, 1);
-    }
-  }
-  return Memo[cur][state];
-}
-void solution(){
-  make_tree(1);
-  memset(Memo, -1, sizeof(Memo));
-  cout << min(DFS(1, 0), DFS(1, 1)) << "\n";
-}
-void solve(){
-  input();
-  solution();
 }
 int main(){
   ios::sync_with_stdio(false);
-  cin.tie(0); cout.tie(0);
-
-  solve();
-
-
-
-
-  return 0;
+  cin.tie(0);
+  cin >> N;
+  for(int i = 1, u, v; i < N; i++){
+    cin >> u >> v;
+    g[u].push_back(v);
+    g[v].push_back(u);
+  }
+  func(1);
+  cout << min(dp[1][0], dp[1][1]) << "\n";
 }

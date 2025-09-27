@@ -1,49 +1,50 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long
+#define x first
+#define y second
+ll N;
+pair<ll, ll> A[101010], B[101010];
 
-#define X first
-#define Y second
-#define INF (1 << 30)
-
-int n, x, y;
-vector<pair<int, int>> v;
-set<pair<int, int>> s;
-
-int dist(pair<int, int> a, pair<int, int> b){
-  return (a.X - b.X)*(a.X - b.X) + (a.Y - b.Y)*(a.Y - b.Y);
+inline ll Square(ll v){return v * v;}
+inline ll Dist(const pair<ll, ll> &p1, const pair<ll, ll> &p2){
+  return Square(p1.x - p2.x) + Square(p1.y - p2.y);
 }
+
+struct CompareY{
+  bool operator()(const pair<ll,ll> &p1, const pair<ll,ll> &p2) const{
+    return tie(p1.y, p1.x) < tie(p2.y, p2.x);
+  }
+};
+
+ll func(int l, int r){
+  if(l == r) return LLONG_MAX;
+  int m = (l + r) / 2;
+  ll xm = A[m].x, d = min(func(l, m), func(m + 1, r));
+  merge(A + l, A + m + 1, A + m + 1, A + r + 1, B + l, CompareY());
+  copy(B + l, B + r + 1, A + l);
+
+  vector<pair<ll,ll>> P;
+  for(int i = l; i <= r; i++) if(Square(A[i].x - xm) < d) P.push_back(A[i]);
+  for(int i = 0; i < P.size(); i++){
+    for(int j = i - 1; j >= 0; j--){
+      if(Square(P[i].y - P[j].y) < d) d = min(d, Dist(P[i], P[j]));
+      else break;
+    }
+  }
+  return d;
+}
+
+
 int main(){
   ios::sync_with_stdio(false);
-  cin.tie(0); cout.tie(0);
-
-  cin >> n;
-  for(int i = 0; i < n; i++){
-    cin >> x >> y;
-    v.push_back({x, y});
+  cin.tie(0);
+  cin >> N;
+  for(int i = 1, a, b; i <= N; i++){
+    cin >> a >> b;
+    A[i] = {a, b};
   }
-
-  sort(v.begin(), v.end()); // 벡터를 X좌표 순으로 정렬을 한 뒤
-  s.insert({v[0].Y, v[0].X});
-  s.insert({v[1].Y, v[1].X}); // 첫번째 점과 두 번째 점을 set에 삽입한다.
-
-  int mini = dist(v[0], v[1]);
-  int idx = 0;
-  for(int i = 2; i < n; i++){
-    while(idx < i){
-      int d = v[i].X - v[idx].X;
-      if(d*d < mini) break;
-      else{
-        s.erase({v[idx].Y, v[idx].X});
-        idx++;
-      }
-    }
-    auto st = s.lower_bound({v[i].Y - sqrt(mini), -INF}); // 후보군을 탐색한다
-    auto en = s.upper_bound({v[i].Y + sqrt(mini), INF}); // 후보군을 탐색한다
-    for(auto it = st; it != en; it++){ // 후보군 내의 점들과의 거리들 중에서 가까운 거리로 mini를 업데이트한다
-      mini = min(mini, dist({it->Y, it->X}, v[i]));
-    }
-    s.insert({v[i].Y, v[i].X});
-  }
-  cout << mini << "\n";
+  sort(A + 1, A + N + 1);
+  cout << func(1, N) << "\n";
   return 0;
 }

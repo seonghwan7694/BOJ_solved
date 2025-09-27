@@ -6,7 +6,7 @@ using namespace std;
 bool isPrime[MAX_SIZE];
 vector<int> prime;
 ll N, Q;
-ll seg[MAX_SIZE * MAX_SIZE * 4], A[MAX_SIZE * MAX_SIZE];
+ll seg[444'444], A[111'111];
 
 void init(int n, int s, int e){
     if(s == e){
